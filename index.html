@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Attendance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classroom Attendance</h1>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Matric Number</th>
+                    <th>Present</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceBody">
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+
+        <form id="newStudentForm">
+            <h2>Add New Student</h2>
+            <input type="text" id="newName" placeholder="Name" required>
+            <input type="text" id="newMatric" placeholder="Matric Number" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <button id="downloadBtn">Download Attendance CSV</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
